@@ -14,3 +14,7 @@ __pycache__/
 
 # VS Code settings (optional)
 .vscode/
+
+# .gitignore
+*.zip
+CNNKerasDataSet/
