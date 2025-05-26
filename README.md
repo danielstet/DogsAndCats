@@ -111,4 +111,32 @@ In general, larger datasets tend to yield better model performance in the long r
 | **Epochs**     | 15                      | 50                               |
 | **Accuracy**   | ~67%                    | 96.5%                            |
 
+## 📚 What You Can Learn from the Second Project
+1. The Power of Transfer Learning
+Instead of building a model from scratch, the author used transfer learning — specifically by fine-tuning a pre-trained VGG16 model.
+This approach leverages the knowledge learned from a large dataset (like ImageNet) and adapts it to your specific task. Benefits include:
 
+- Faster training
+
+- Better performance with less data
+
+- Avoids the need to design complex architectures from scratch
+
+2. Importance of Dataset Size
+The second project used 25,000 images while you used only 1,000. Generally:
+
+- More data leads to better generalization
+
+- Reduces the risk of overfitting
+
+- Helps the model learn more diverse features
+
+3. Impact of Training Duration
+He trained for 50 epochs, while you stopped at 15.
+Training for more epochs (with proper validation to avoid overfitting) can:
+
+- Help the model learn better feature representations
+
+- Improve final accuracy
+
+- Require more compute resources, so careful monitoring is essential
