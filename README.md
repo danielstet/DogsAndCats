@@ -83,8 +83,32 @@ Normalize pixel values:
    ```
 ## The model achieves approximately 67% accuracy on the test set.
 
+## 📚 Insights from the Second Project
+The second source takes a different approach to solving the same problem. 
+Instead of training a model from scratch, the author uses a well-established technique: fine-tuning a pre-trained model. 
+Specifically, he chose the VGG16 architecture and achieved a significantly higher accuracy of 96.5%. 
+Additionally, he trained his model on a much larger dataset containing 25,000 images, compared to the 1,000 images I used.
 
+In general, larger datasets tend to yield better model performance in the long run.
 
+## 🔍 VGG16 Architecture Highlights (as described in the source):
+1. Utilization of very small convolutional filters (e.g., 3×3 and 1×1).
 
+2. Max pooling layers with 2×2 filters and matching stride.
+
+3. Stacking multiple convolutional layers before pooling to form well-defined blocks.
+
+4. Repetitive use of the convolution → pooling block pattern.
+
+5. Construction of very deep models (e.g., 16 or 19 layers).
+
+## 🔑 Key Differences Between Our Approaches
+
+| Aspect         | My Approach             | His Approach                    |
+|----------------|-------------------------|----------------------------------|
+| **Model**      | Built from scratch       | Fine-tuned pre-trained VGG16     |
+| **Dataset Size** | 1,000 images           | 25,000 images                    |
+| **Epochs**     | 15                      | 50                               |
+| **Accuracy**   | ~67%                    | 96.5%                            |
 
 
